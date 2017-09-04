@@ -52,6 +52,7 @@
                         if(angular.isDefined(editor)) {
                             $timeout(function() {
                                 element.redactor('code.set', ngModel.$viewValue || '');
+                                element.redactor('observe.load');
                                 scope.redactorLoaded = true;
                             });
                         }
